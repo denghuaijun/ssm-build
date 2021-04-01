@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--关联其它配置文件，当然idea可以自动关联上下文，这样只是为了保险起见 -->
+    <!--mybatis 整合spring配置 -->
+    <import resource="classpath:spring-dao.xml"/>
+    <!-- spring业务层整合文件配置-->
+    <import resource="classpath:spring-service.xml"/>
+    <import resource="classpath:spring-mvc.xml"/>
+
+</beans>
