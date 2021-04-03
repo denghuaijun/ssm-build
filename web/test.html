@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iframe体验页面无刷新</title>
+</head>
+<body>
+<div>
+    <p>请输入局部刷新地址：</p>
+    <div>
+        <input type="text" id="url" value="https://www.baidu.com/">
+        <input type="button" value="提交" onclick="testIframe()">
+    </div>
+</div>
+
+<iframe id="iframe"  frameborder="0" style="width: 100%;height: 500px"></iframe>
+</body>
+<script>
+    function testIframe() {
+        var url = document.getElementById("url").value;
+        document.getElementById("iframe").src=url;
+    }
+</script>
+</html>
